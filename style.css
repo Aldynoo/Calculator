@@ -5,28 +5,55 @@
 
 body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-}
-
-.calculator {
-    padding-top: 10px;
-    
 }
 
 button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: transparent;
 }
 input {
     width: 245px;
     height: 60px;
-    border-color: transparent;
+    border-color: lightgray;
 }
 
-.display, .column1, .column2, .column3, .column4, .column5 {
-    padding: 5px;
+.column1, .column2, .column3, .column4, .column5 {
+    display: flex;
+    gap: 3px;
+    padding-top: 5px;
+}
+
+#num {
+    background-color: gray;
+}
+
+#operator {
+background-color: orange;
+}
+
+#erase {
+    background-color: rgb(177, 176, 176);
+}
+
+#display {
+    outline: 1px solid lightgray;  /* will change, it makes to big */
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    /* need to make display show from right side or center if it looks nice*/
+}
+
+.calculator {
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
 }
