@@ -56,4 +56,13 @@ background-color: orange;
     padding: 10px;
     background-color: black;
     border-radius: 10px;
+    max-width: 250px;
+    max-height: 390px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.15s;
+    transform: scale(1.1);
 }
