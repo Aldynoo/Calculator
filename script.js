@@ -2,8 +2,15 @@ const input = document.querySelector("input");
 
 const btns = document.querySelectorAll(".num");
 const clearBtn = document.querySelector(".eraseAll")
+const operatorBtn = document.querySelectorAll(".operator")
 
 btns.forEach((button) => {
+  button.addEventListener("click", () => {
+    input.value += button.textContent;
+	});
+});
+
+operatorBtn.forEach((button) => {
   button.addEventListener("click", () => {
     input.value += button.textContent;
 	});
@@ -38,7 +45,7 @@ function clearAll () {
 }
 
 function clearPrevious() {
-  
+
 }
 
 calculate();
