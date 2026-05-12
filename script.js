@@ -1,9 +1,11 @@
 const input = document.querySelector("input");
 
-const btn = document.getElementById("num");
-btn.addEventListener("click", () => {
-    let clickedButton = input.value;
-    clickedButton = parseFloat(clickedButton);
+const btns = document.querySelectorAll(".num");
+
+btns.forEach((button) => {
+  button.addEventListener("click", () => {
+    input.value += button.textContent;
+	});
 });
 
 function add (a, b) {
@@ -26,4 +28,4 @@ function calculate () {
 
 }
 
-calculate(a,b);
+calculate();
