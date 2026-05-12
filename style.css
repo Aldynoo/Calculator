@@ -40,7 +40,7 @@ input {
 background-color: orange;
 }
 
-.erase {
+.erase, .eraseAll {
     background-color: rgb(177, 176, 176);
 }
 
